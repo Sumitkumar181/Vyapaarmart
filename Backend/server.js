@@ -149,4 +149,4 @@ app.post('/send-email', upload.single('file'), validators, async (req, res) => {
 // health
 app.get('/', (req, res) => res.send('Backend OK'));
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+module.exports = app;
