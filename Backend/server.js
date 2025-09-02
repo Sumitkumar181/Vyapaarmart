@@ -149,4 +149,7 @@ app.post('/send-email', upload.single('file'), validators, async (req, res) => {
 // health
 app.get('/', (req, res) => res.send('Backend OK'));
 
-module.exports = app;
+module.exports = (req, res) => {
+    app(req, res);
+};
+
