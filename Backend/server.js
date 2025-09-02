@@ -12,7 +12,7 @@ const path = require('path');
 const { body, validationResult } = require('express-validator');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+
 
 // Basic middlewares
 app.use(helmet());
@@ -26,8 +26,8 @@ app.use(morgan('dev'));
 app.use(rateLimit({ windowMs: 60 * 1000, max: 30 }));
 
 // Ensure upload dir exists
-const uploadDir = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir);
+const uploadDir = path.join('/tmp', 'uploads');
+if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
 
 // Multer config for optional file upload
 const storage = multer.diskStorage({

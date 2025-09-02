@@ -17,7 +17,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/Global_Sources/$1"
+            "dest": "/Global_Sources/index.html"
         }
     ]
 }
