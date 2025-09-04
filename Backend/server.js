@@ -9,14 +9,27 @@ dotenv.config();
 
 const app = express();
 
+const rawOrigins = process.env.CORS_ORIGIN || ""; 
+const allowedOrigins = rawOrigins.split(",").map(s => s.trim()).filter(Boolean);
 
-const PORT = process.env.PORT || 5000;
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "*";
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (!origin) { return callback(null, true); }                    
+        if (allowedOrigins.includes("*")) { return callback(null, true); } 
+        if (allowedOrigins.indexOf(origin) !== -1) { return callback(null, true); }
+        console.warn(`[CORS] Blocked origin: ${origin}`);
+        return callback(new Error("Not allowed by CORS"));
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization", "Accept"],
+    credentials: true,
+    optionsSuccessStatus: 204
+};
 
-
-app.use(cors({ origin: CORS_ORIGIN }));
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 
 
 const upload = multer({
