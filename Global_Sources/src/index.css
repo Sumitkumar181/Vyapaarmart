@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    letter-spacing: 0.05em;
+  }
+}
+@layer components {
+  .H1 {
+    @apply text-[24px] leading-[32px] sm:text-[30px] sm:leading-[38px] xl:text-[36px] xl:leading-[44px] 2xl:text-[52px] 2xl:leading-[50px] font-roboto font-semibold;
+  }
+
+  .H2 {
+    @apply text-[22px] leading-[30px] sm:text-[26px] sm:leading-[34px] xl:text-[32px] xl:leading-[40px] 2xl:text-[48px] 2xl:leading-[46px] font-roboto font-semibold;
+  }
+
+  .H3 {
+    @apply text-[20px] leading-[28px] sm:text-[24px] sm:leading-[32px] xl:text-[28px] xl:leading-[36px] 2xl:text-[38px] 2xl:leading-[42px] font-roboto font-semibold;
+  }
+
+  .H4 {
+    @apply text-[18px] leading-[26px] sm:text-[20px] sm:leading-[28px] lg:text-[22px] lg:leading-[30px] font-roboto font-semibold;
+  }
+
+  .H5 {
+    @apply text-[16px] leading-[24px] sm:text-[18px] sm:leading-[26px] font-roboto font-semibold;
+  }
+
+  .H6 {
+    @apply text-[15px] leading-[22px] sm:text-[16px] sm:leading-[24px] font-roboto font-semibold;
+  }
+
+  .P {
+    @apply text-[15px] sm:text-[17px] ;
+  }
+
+  .SP {
+    @apply text-[14px] sm:text-[15px] ;
+  }
+ 
+}
+.customContainer {
+  @apply max-w-[1470px] mx-auto;
+}
+
+.customPadding {
+  @apply px-3 sm:px-5 md:px-7 lg:px-10;
+} 
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+
+}

@@ -1,0 +1,83 @@
+# ==========================================
+# LOGS & DEBUG FILES
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# NODE MODULES (dependencies)
+# ==========================================
+node_modules/
+
+# ==========================================
+# BUILD OUTPUTS
+# ==========================================
+dist/
+dist-ssr/
+build/
+.next/
+out/
+
+# ==========================================
+# ENVIRONMENT CONFIGURATION
+# ==========================================
+.env
+.env.*.local
+*.local
+
+# ==========================================
+# EDITOR / IDE FILES
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# CACHE FILES (build tools cache)
+# ==========================================
+.cache/
+.parcel-cache/
+coverage/
+*.tsbuildinfo
+turbo/
+.storybook-out/
+
+# ==========================================
+# TESTING FILES
+# ==========================================
+jest.config.js
+jest.config.ts
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+coverage/
+
+# ==========================================
+# LOCAL TEMP FILES
+# ==========================================
+*.tmp
+*.temp
+*.bak
+
+# ==========================================
+# LINUX/MAC SYSTEM FILES
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.vercel
