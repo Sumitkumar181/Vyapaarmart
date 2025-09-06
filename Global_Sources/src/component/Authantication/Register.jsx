@@ -1,5 +1,5 @@
 import { useState } from "react";
-import registerBanner from "../../assets/AuthenticationImage/Registerbanner.png";
+import RegisterBanner from "../../assets/AuthenticationImage/RegisterBanner.png";
 import logo from "../../assets/image/Logo/logo.png";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
@@ -36,7 +36,7 @@ export default function Register() {
                         <span className="text-[#EE343B]">business growth.</span>
                     </h2>
                     <img
-                        src={registerBanner}
+                        src={RegisterBanner}
                         alt="Register Illustration"
                         className="rounded-xl w-full max-w-md lg:max-w-lg object-contain"
                     />
