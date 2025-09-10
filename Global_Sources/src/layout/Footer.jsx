@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -43,16 +44,32 @@ const Footer = () => {
           
           
         </div>
-
         <div>
-          <h3 className="font-semibold text-base text-white mb-2 ">About Us</h3>
-          <ul className="space-y-2  ">
-            <li className="hover:text-darkRed cursor-pointer text-lightgray">About Vyapaarmart</li>
-            <li className="hover:text-darkRed cursor-pointer">Our Services</li>
-            <li className="hover:text-darkRed cursor-pointer">Our Quality Commitment</li>
-            <li className="hover:text-darkRed cursor-pointer">Buyer Stories</li>
+          <h3 className="font-semibold text-base text-white mb-2">About Us</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link to="/about" className="hover:text-darkRed cursor-pointer">
+                About Vyapaarmart
+              </Link>
+            </li>
+            <li>
+              <Link to="/ourpackages" className="hover:text-darkRed cursor-pointer">
+                Our Packages
+              </Link>
+            </li>
+            <li>
+              <Link to="/quality" className="hover:text-darkRed cursor-pointer">
+                Our Quality Commitment
+              </Link>
+            </li>
+            <li>
+              <Link to="/buyer-stories" className="hover:text-darkRed cursor-pointer">
+                Buyer Stories
+              </Link>
+            </li>
           </ul>
         </div>
+
 
         
         <div>
@@ -80,10 +97,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-base text-white mb-3">Contact Us</h3>
           <ul className="space-y-2">
-            <li className="hover:text-darkRed cursor-pointer"><span className="font-medium text-base">Address :</span> NX One, Sector-Techzone-4, Greater Noida West, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, 201306.</li>
-            <li className="hover:text-darkRed cursor-pointer"><span className="font-medium text-base">Phone Number :</span> 0120-4213085, +91 964 371 2933</li>
-            <li className="hover:text-darkRed cursor-pointer"><span className="font-medium text-base">Time :</span> 10: 00 am – 6:30pm</li>
-            <li className="hover:text-darkRed cursor-pointer"><span className="font-medium text-base">Mail Us :</span> helpdesk@vyapaarmart.com support@vyapaarmart.com</li>
+            <li className=""><span className="font-medium text-base">Address :</span> NX One, Sector-Techzone-4, Greater Noida West, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, 201306.</li>
+            <li className=""><span className="font-medium text-base">Phone Number :</span> 0120-4213085, +91 964 371 2933</li>
+            <li className=""><span className="font-medium text-base">Time :</span> 10: 00 am – 6:30pm</li>
+            <li className=""><span className="font-medium text-base">Mail Us :</span> helpdesk@vyapaarmart.com support@vyapaarmart.com</li>
           </ul>
         </div>
       </div>

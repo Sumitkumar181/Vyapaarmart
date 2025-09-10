@@ -9,6 +9,7 @@ import AllCatagories from "../pages/AllCatagories";
 import BuyerFormPage from "../pages/BuyerFormPage";
 import RegisterPage from "../pages/RegisterPage";
 import SignInpage from "../pages/SignInpage";
+import OurPackagesPage from "../pages/OurPackagesPage";
 
 
 const AppRoutes = [
@@ -51,6 +52,10 @@ const AppRoutes = [
       {
         path: "SignIn",
         element: <SignInpage/>
+      },
+      {
+        path: "ourpackages",
+        element: <OurPackagesPage/>
       },
       
     ],

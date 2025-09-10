@@ -48,7 +48,7 @@ export default function SourcingServices() {
     const navigate = useNavigate();
 
     const handleCategoryClick = (category) => {
-        navigate(`/buyerform?category=${encodeURIComponent(category)}`);
+        navigate(`/allCatagories?category=${encodeURIComponent(category)}`);
     };
 
     return (

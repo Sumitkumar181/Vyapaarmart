@@ -163,7 +163,7 @@ const Navbar = () => {
 
                             <button className="bg-darkRed text-white px-6 py-3 text-sm font-semibold transition-all duration-200 rounded-r-full hover:bg-red-700">
                                 Search
-                            </button>
+                            </button> 
                         </div>
 
                         <div className="flex items-center gap-4 ">
@@ -211,7 +211,7 @@ const Navbar = () => {
                             <TbTargetArrow size={20} />
                             <span>Request for Quotations</span>
                         </Link>
-                        <Link to="/auth" className="flex items-center gap-2 hover:text-red-500">
+                        <Link to="/register" className="flex items-center gap-2 hover:text-red-500">
                             <LuUserRound size={20} />
                             <span>Sign in / Register</span>
                         </Link>
