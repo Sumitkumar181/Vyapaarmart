@@ -61,7 +61,7 @@ async function sendMail(formData, file) {
 
     const mailOptions = {
         from: FROM_EMAIL,
-        to: TO_EMAIL,
+        to: TO_EMAIL,   
         subject: `New RFQ: ${formData.product || "Product"} — ${formData.name || "Buyer"}`,
         text: `${formData.product || ""} - ${formData.quantity || ""} ${formData.unit || ""}`,
         html,

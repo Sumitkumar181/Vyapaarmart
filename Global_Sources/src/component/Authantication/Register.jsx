@@ -3,6 +3,7 @@ import RegisterBanner from "../../assets/AuthenticationImage/RegisterBanner.png"
 import logo from "../../assets/image/Logo/logo.png";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
+import { Link } from "react-router-dom";
 
 export default function Register() {
     const [formData, setFormData] = useState({
@@ -130,16 +131,16 @@ export default function Register() {
                             />
                         </div>
 
-                       
-                        <button
-                            type="submit"
+                        <Link
+                            to="/profile"
                             className="w-full bg-gradient-to-r from-blue-600 to-blue-700 
-                         text-white font-semibold py-3 sm:py-4 rounded-xl 
-                         shadow-md hover:from-blue-700 hover:to-blue-800 
-                         transition-all transform hover:scale-[1.02] text-base sm:text-lg"
+             text-white font-semibold py-3 sm:py-4 rounded-xl 
+             shadow-md hover:from-blue-700 hover:to-blue-800 
+             transition-all transform hover:scale-[1.02] text-base sm:text-lg 
+             text-center block"
                         >
                             Register
-                        </button>
+                        </Link>
                     </form>
 
                     

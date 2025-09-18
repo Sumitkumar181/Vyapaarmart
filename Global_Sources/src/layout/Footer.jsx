@@ -25,10 +25,6 @@ const fadeInUp = {
 const Footer = () => {
   return (
     <footer className="w-full  bg-[#042939]  text-gray-700 px-4 sm:px-6 lg:px-8 py-10 font-roboto">
-     
-      
-
-     
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 text-sm text-[#EBEFF0] mb-10">
         
         <div>
@@ -107,12 +103,63 @@ const Footer = () => {
 
       <div className="flex items-center justify-center gap-3 border-t border-b border-lightgray py-4 mb-4">
         <span className="text-sm text-white">Follow Us:</span>
-        <FaFacebookSquare size={20} className="hover:text-blue-600 text-white cursor-pointer" />
-        <FaSquareXTwitter size={20} className="hover:text-black text-white cursor-pointer" />
-        <FaInstagramSquare size={20} className="hover:text-darkRed text-white cursor-pointer" />
-        <FaLinkedin size={20} className="hover:text-blue-700 text-white cursor-pointer" />
-        <FaSquareYoutube size={20} className="hover:text-darkRed text-white cursor-pointer" />
+
+        <a
+          href="https://www.facebook.com/Vyapaarmartsolutionpvtltd/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebookSquare
+            size={20}
+            className="hover:text-blue-600 text-white cursor-pointer"
+          />
+        </a>
+
+        <a
+          href="https://twitter.com/YourPage"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaSquareXTwitter
+            size={20}
+            className="hover:text-black text-white cursor-pointer"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/vyapaarmart_solution/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagramSquare
+            size={20}
+            className="hover:text-pink-500 text-white cursor-pointer"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/vyapaarmart/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin
+            size={20}
+            className="hover:text-blue-700 text-white cursor-pointer"
+          />
+        </a>
+
+        <a
+          href="https://www.youtube.com/@vyapaarmart-k4h"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaSquareYoutube
+            size={20}
+            className="hover:text-red-600 text-white cursor-pointer"
+          />
+        </a>
       </div>
+
 
     
       

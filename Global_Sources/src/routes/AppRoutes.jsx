@@ -10,6 +10,9 @@ import BuyerFormPage from "../pages/BuyerFormPage";
 import RegisterPage from "../pages/RegisterPage";
 import SignInpage from "../pages/SignInpage";
 import OurPackagesPage from "../pages/OurPackagesPage";
+import DashboardHome from "../features/dashboard/pages/DashboardHome";
+import DashboardLayout from "../layout/DashboardLayout";
+
 
 
 const AppRoutes = [
@@ -57,9 +60,17 @@ const AppRoutes = [
         path: "ourpackages",
         element: <OurPackagesPage/>
       },
+    ],
+  },
+  {
+    path: "/profile",
+    element: <DashboardLayout/>,
+    children: [
+      { path: "", element: <DashboardHome/> },        
       
     ],
   },
+
 ];
 
 export default AppRoutes;

@@ -33,53 +33,6 @@ const banners = [banner1, banner2, banner3];
 
 const categories = [
     {
-        name: "Health & Beauty",
-        subCategories: {
-            "Personal Care Products": [
-                "Face Mask",
-                "Sanitary Napkins",
-                "Safety Masks",
-                "Hand Sanitizers",
-                "Wet Wipes",
-            ],
-            "Common Medicines & Drugs": [
-                "Cough Syrup",
-                "Multivitamins Tablets",
-                "Anti Allergic Medicine",
-                "Pharmaceutical Injection",
-                "Softgel Capsules",
-            ],
-            "Soap & Hand Wash": [
-                "Liquid Hand Wash",
-                "Ayurvedic Soap",
-                "Ketoconazole Soap",
-                "Glycerine Soap",
-                "Antiseptic Hand Wash",
-            ],
-            "Cosmetics": [
-                "Face Wash",
-                "Face Packs",
-                "Body Wash",
-                "Talcum Powder",
-                "Moisturizing Cream",
-            ],
-            "Ayurvedic Medicines & Products": [
-                "Ayurvedic Syrups",
-                "Ayurvedic Capsules",
-                "Giloy Juice",
-                "Isabgol",
-                "Ashwagandha Tablets",
-            ],
-            "Pain Relief Drugs & Medicines": [
-                "Nimesulide",
-                "Pain Relief Gel",
-                "Pain Killer Oil",
-                "Etoricoxib Tablet",
-                "Aceclofenac Paracetamol Tablet",
-            ],
-        },
-    },
-    {
         name: "Apparel & Fashion",
         subCategories: {
             "Human Hair & Accessories": [
@@ -127,51 +80,131 @@ const categories = [
         },
     },
     {
-        name: "Machinery",
+        name: "Automobiles",
         subCategories: {
-            "Packaging Machine": [
-                "Milk Packing Machine",
-                "Taping Machines",
-                "Box Packing Machine",
-                "Wrapping Machines",
-                "Banding Machine",
+            "Passenger Vehicles": [
+                "Sedans",
+                "SUVs",
+                "Hatchbacks",
+                "Electric Cars",
+                "Luxury Cars"
             ],
-            "Construction Machinery": [
-                "Concrete Mixer Machines",
-                "Vertical Shaft Impactor",
-                "Interlock Machines",
-                "Soil Compactor",
-                "Concrete Pump",
+            "Commercial Vehicles": [
+                "Trucks",
+                "Buses",
+                "Vans",
+                "Pickup Trucks",
+                "Trailers"
             ],
-            "Cutting Machine": [
-                "Cutting Machines",
-                "Paper Cutting Machines",
-                "Core Cutting Machine",
-                "Bosch Cutting Machine",
-                "Jigsaw Machine",
+            "Two & Three Wheelers": [
+                "Motorcycles",
+                "Scooters",
+                "Bicycles",
+                "Electric Bikes",
+                "Rickshaws"
             ],
-            "Food Processing Machinery": [
-                "Popcorn Machines",
-                "Food Dryer",
-                "Peanut Roaster",
-                "Papad Making Machine",
-                "Onion Cutting Machine",
+            "Spare Parts & Accessories": [
+                "Engines & Components",
+                "Brakes & Clutches",
+                "Batteries",
+                "Tyres & Wheels",
+                "Mirrors & Lights"
             ],
-            "Industrial Machinery & Parts": [
-                "Sand Blasting Machine",
-                "Vmc Machine",
-                "Wet Grinder Machine",
-                "Cold Press Machine",
-                "Winding Machine",
+            "Automobile Services": [
+                "Car Repair",
+                "Vehicle Insurance",
+                "Car Detailing",
+                "Vehicle Registration",
+                "Car Rental Services"
+            ]
+        }
+    },
+    {
+        name: "Agriculture",
+        subCategories: {
+            "Rice": [
+                "Brown Rice",
+                "Basmati Rice",
+                "Black Rice",
+                "Red Rice",
+                "India Gate Basmati Rice",
             ],
-            "Agricultural Machines & Tools": [
-                "Agricultural Machinery",
-                "Agricultural Equipment",
-                "Agricultural Machinery",
-                "Cultivators",
-                "Power Tiller",
+            "Tea": [
+                "Masala Tea",
+                "Assam Ctc Tea",
+                "Organic Tea",
+                "Lemon Tea",
+                "Tea Powder",
+            ],
+            "Irrigation Systems": [
+                "Sprinkler",
+                "Drip Irrigation System",
+                "Drip Irrigation Pipes",
+                "Water Sprinkler",
+                "Hdpe Irrigation Pipe",
+            ],
+            "Organic Vegetables": [
+                "Organic Potatoes",
+                "Organic Ginger",
+                "Organic Garlic",
+                "Organic Onions",
+                "Organic Drumsticks",
+            ],
+            "Pulses": [
+                "Organic Pulses",
+                "Chana Dal",
+                "Toor Dal",
+                "Moong Dal",
+                "Masoor Dal",
+            ],
+            "Tractor Parts": [
+                "Tractor Spare Parts",
+                "Tractor Rotavator",
+                "Hydraulic Tractor Parts",
+                "Top Link Pins",
+                "Linch Pins",
             ],
         },
+    },
+    {
+        name: "Brass Hardware & Software",
+        subCategories: {
+            "Brass Fittings": [
+                "Brass Nuts & Bolts",
+                "Brass Screws",
+                "Brass Washers",
+                "Brass Inserts",
+                "Brass Bushings"
+            ],
+            "Brass Valves": [
+                "Ball Valves",
+                "Gate Valves",
+                "Check Valves",
+                "Needle Valves",
+                "Angle Valves"
+            ],
+            "Brass Pipes & Tubes": [
+                "Seamless Brass Pipes",
+                "Welded Brass Tubes",
+                "Brass Plumbing Pipes",
+                "Brass Water Pipes",
+                "Brass Gas Pipes"
+            ],
+            "Brass Decorative Hardware": [
+                "Brass Handles",
+                "Brass Knobs",
+                "Brass Hinges",
+                "Brass Nameplates",
+                "Brass Curtain Rods"
+            ],
+            "Industrial Brass Components": [
+                "Brass Electrical Parts",
+                "Brass Connectors",
+                "Brass Terminals",
+                "Brass Machined Parts",
+                "Brass Couplings"
+            ]
+        }
     },
     {
         name: "Constructions & Real Estate",
@@ -267,6 +300,142 @@ const categories = [
             ],
         },
     },
+    {
+        name: "Energy Power",
+        subCategories: {
+            "Renewable Energy": [
+                "Solar Panels",
+                "Wind Turbines",
+                "Hydropower Equipment",
+                "Geothermal Systems",
+                "Biomass Energy"
+            ],
+            "Non-Renewable Energy": [
+                "Coal",
+                "Natural Gas",
+                "Diesel Generators",
+                "Petroleum",
+                "Nuclear Energy"
+            ],
+            "Power Generation Equipment": [
+                "Transformers",
+                "Turbines",
+                "Generators",
+                "Power Inverters",
+                "Control Panels"
+            ],
+            "Energy Storage": [
+                "Batteries",
+                "Capacitors",
+                "Flywheels",
+                "Pumped Storage Systems",
+                "Energy Banks"
+            ],
+            "Energy Services": [
+                "Power Supply & Distribution",
+                "Energy Auditing",
+                "Grid Solutions",
+                "Energy Consulting",
+                "Maintenance Services"
+            ]
+        }
+    },
+    {
+        name: "Health & Beauty",
+        subCategories: {
+            "Personal Care Products": [
+                "Face Mask",
+                "Sanitary Napkins",
+                "Safety Masks",
+                "Hand Sanitizers",
+                "Wet Wipes",
+            ],
+            "Common Medicines & Drugs": [
+                "Cough Syrup",
+                "Multivitamins Tablets",
+                "Anti Allergic Medicine",
+                "Pharmaceutical Injection",
+                "Softgel Capsules",
+            ],
+            "Soap & Hand Wash": [
+                "Liquid Hand Wash",
+                "Ayurvedic Soap",
+                "Ketoconazole Soap",
+                "Glycerine Soap",
+                "Antiseptic Hand Wash",
+            ],
+            "Cosmetics": [
+                "Face Wash",
+                "Face Packs",
+                "Body Wash",
+                "Talcum Powder",
+                "Moisturizing Cream",
+            ],
+            "Ayurvedic Medicines & Products": [
+                "Ayurvedic Syrups",
+                "Ayurvedic Capsules",
+                "Giloy Juice",
+                "Isabgol",
+                "Ashwagandha Tablets",
+            ],
+            "Pain Relief Drugs & Medicines": [
+                "Nimesulide",
+                "Pain Relief Gel",
+                "Pain Killer Oil",
+                "Etoricoxib Tablet",
+                "Aceclofenac Paracetamol Tablet",
+            ],
+        },
+    },
+    
+    {
+        name: "Machinery",
+        subCategories: {
+            "Packaging Machine": [
+                "Milk Packing Machine",
+                "Taping Machines",
+                "Box Packing Machine",
+                "Wrapping Machines",
+                "Banding Machine",
+            ],
+            "Construction Machinery": [
+                "Concrete Mixer Machines",
+                "Vertical Shaft Impactor",
+                "Interlock Machines",
+                "Soil Compactor",
+                "Concrete Pump",
+            ],
+            "Cutting Machine": [
+                "Cutting Machines",
+                "Paper Cutting Machines",
+                "Core Cutting Machine",
+                "Bosch Cutting Machine",
+                "Jigsaw Machine",
+            ],
+            "Food Processing Machinery": [
+                "Popcorn Machines",
+                "Food Dryer",
+                "Peanut Roaster",
+                "Papad Making Machine",
+                "Onion Cutting Machine",
+            ],
+            "Industrial Machinery & Parts": [
+                "Sand Blasting Machine",
+                "Vmc Machine",
+                "Wet Grinder Machine",
+                "Cold Press Machine",
+                "Winding Machine",
+            ],
+            "Agricultural Machines & Tools": [
+                "Agricultural Machinery",
+                "Agricultural Equipment",
+                "Agricultural Machinery",
+                "Cultivators",
+                "Power Tiller",
+            ],
+        },
+    },
+   
     {
         name: "Hospital & Medical Supplies",
         subCategories: {
@@ -405,53 +574,6 @@ const categories = [
                 "Pp Strapping Roll",
                 "Shrink Wraps",
                 "Printed Pouches",
-            ],
-        },
-    },
-    {
-        name: "Agriculture",
-        subCategories: {
-            "Rice": [
-                "Brown Rice",
-                "Basmati Rice",
-                "Black Rice",
-                "Red Rice",
-                "India Gate Basmati Rice",
-            ],
-            "Tea": [
-                "Masala Tea",
-                "Assam Ctc Tea",
-                "Organic Tea",
-                "Lemon Tea",
-                "Tea Powder",
-            ],
-            "Irrigation Systems": [
-                "Sprinkler",
-                "Drip Irrigation System",
-                "Drip Irrigation Pipes",
-                "Water Sprinkler",
-                "Hdpe Irrigation Pipe",
-            ],
-            "Organic Vegetables": [
-                "Organic Potatoes",
-                "Organic Ginger",
-                "Organic Garlic",
-                "Organic Onions",
-                "Organic Drumsticks",
-            ],
-            "Pulses": [
-                "Organic Pulses",
-                "Chana Dal",
-                "Toor Dal",
-                "Moong Dal",
-                "Masoor Dal",
-            ],
-            "Tractor Parts": [
-                "Tractor Spare Parts",
-                "Tractor Rotavator",
-                "Hydraulic Tractor Parts",
-                "Top Link Pins",
-                "Linch Pins",
             ],
         },
     },
@@ -644,126 +766,6 @@ const categories = [
         },
     },
         {
-            name: "Automobiles",
-            subCategories: {
-                "Passenger Vehicles": [
-                    "Sedans",
-                    "SUVs",
-                    "Hatchbacks",
-                    "Electric Cars",
-                    "Luxury Cars"
-                ],
-                "Commercial Vehicles": [
-                    "Trucks",
-                    "Buses",
-                    "Vans",
-                    "Pickup Trucks",
-                    "Trailers"
-                ],
-                "Two & Three Wheelers": [
-                    "Motorcycles",
-                    "Scooters",
-                    "Bicycles",
-                    "Electric Bikes",
-                    "Rickshaws"
-                ],
-                "Spare Parts & Accessories": [
-                    "Engines & Components",
-                    "Brakes & Clutches",
-                    "Batteries",
-                    "Tyres & Wheels",
-                    "Mirrors & Lights"
-                ],
-                "Automobile Services": [
-                    "Car Repair",
-                    "Vehicle Insurance",
-                    "Car Detailing",
-                    "Vehicle Registration",
-                    "Car Rental Services"
-                ]
-            }
-        },
-        {
-            name: "Brass Hardware & Software",
-            subCategories: {
-                "Brass Fittings": [
-                    "Brass Nuts & Bolts",
-                    "Brass Screws",
-                    "Brass Washers",
-                    "Brass Inserts",
-                    "Brass Bushings"
-                ],
-                "Brass Valves": [
-                    "Ball Valves",
-                    "Gate Valves",
-                    "Check Valves",
-                    "Needle Valves",
-                    "Angle Valves"
-                ],
-                "Brass Pipes & Tubes": [
-                    "Seamless Brass Pipes",
-                    "Welded Brass Tubes",
-                    "Brass Plumbing Pipes",
-                    "Brass Water Pipes",
-                    "Brass Gas Pipes"
-                ],
-                "Brass Decorative Hardware": [
-                    "Brass Handles",
-                    "Brass Knobs",
-                    "Brass Hinges",
-                    "Brass Nameplates",
-                    "Brass Curtain Rods"
-                ],
-                "Industrial Brass Components": [
-                    "Brass Electrical Parts",
-                    "Brass Connectors",
-                    "Brass Terminals",
-                    "Brass Machined Parts",
-                    "Brass Couplings"
-                ]
-            }
-        },
-        {
-            name: "Computer Hardware & Software",
-            subCategories: {
-                "Computer Hardware": [
-                    "Desktops",
-                    "Laptops",
-                    "Monitors",
-                    "Motherboards",
-                    "Graphic Cards"
-                ],
-                "Computer Peripherals": [
-                    "Keyboards",
-                    "Mice",
-                    "Printers & Scanners",
-                    "External Drives",
-                    "USB Hubs"
-                ],
-                "Networking Devices": [
-                    "Routers",
-                    "Modems",
-                    "Switches",
-                    "Access Points",
-                    "Network Cables"
-                ],
-                "Software": [
-                    "Operating Systems",
-                    "Office Suites",
-                    "Antivirus Software",
-                    "Graphics & Design Tools",
-                    "Database Software"
-                ],
-                "Cloud & IT Services": [
-                    "Web Hosting",
-                    "Cloud Storage",
-                    "Data Recovery",
-                    "IT Support",
-                    "Cybersecurity Solutions"
-                ]
-            }
-        },
-        {
             name: "Food & Beverage",
             subCategories: {
                 "Beverages": [
@@ -800,86 +802,6 @@ const categories = [
                     "Chocolates",
                     "Pastries",
                     "Candies"
-                ]
-            }
-        },
-        {
-            name: "Energy Power",
-            subCategories: {
-                "Renewable Energy": [
-                    "Solar Panels",
-                    "Wind Turbines",
-                    "Hydropower Equipment",
-                    "Geothermal Systems",
-                    "Biomass Energy"
-                ],
-                "Non-Renewable Energy": [
-                    "Coal",
-                    "Natural Gas",
-                    "Diesel Generators",
-                    "Petroleum",
-                    "Nuclear Energy"
-                ],
-                "Power Generation Equipment": [
-                    "Transformers",
-                    "Turbines",
-                    "Generators",
-                    "Power Inverters",
-                    "Control Panels"
-                ],
-                "Energy Storage": [
-                    "Batteries",
-                    "Capacitors",
-                    "Flywheels",
-                    "Pumped Storage Systems",
-                    "Energy Banks"
-                ],
-                "Energy Services": [
-                    "Power Supply & Distribution",
-                    "Energy Auditing",
-                    "Grid Solutions",
-                    "Energy Consulting",
-                    "Maintenance Services"
-                ]
-            }
-        },
-        {
-            name: "Environment & Pollution",
-            subCategories: {
-                "Waste Management": [
-                    "Solid Waste Management",
-                    "Hazardous Waste Disposal",
-                    "Recycling Systems",
-                    "Composting Units",
-                    "Landfill Equipment"
-                ],
-                "Water Treatment": [
-                    "Water Purifiers",
-                    "Effluent Treatment Plants",
-                    "Sewage Treatment",
-                    "Desalination Units",
-                    "Filtration Systems"
-                ],
-                "Air Pollution Control": [
-                    "Air Filters",
-                    "Scrubbers",
-                    "Dust Collectors",
-                    "Emission Control Systems",
-                    "Odor Control Systems"
-                ],
-                "Environmental Monitoring": [
-                    "Air Quality Monitors",
-                    "Water Quality Sensors",
-                    "Noise Monitoring Systems",
-                    "Radiation Detectors",
-                    "Soil Testing Kits"
-                ],
-                "Eco-Friendly Products": [
-                    "Biodegradable Bags",
-                    "Recycled Materials",
-                    "Eco-friendly Packaging",
-                    "Compostable Products",
-                    "Green Building Materials"
                 ]
             }
         },
@@ -1402,7 +1324,7 @@ const categories = [
                     "Traffic Management Systems"
                 ]
             }
-        }
+        }   
 
 
 ];

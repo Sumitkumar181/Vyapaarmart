@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Check } from 'lucide-react';
 import { FaRupeeSign } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -136,17 +137,17 @@ export default function OurPackages() {
                                 <ul className="space-y-2 mb-6">
                                     {pkg.features.map((feature, idx) => (
                                         <li key={idx} className="flex items-center space-x-2" style={{ color: pkg.textColor }}>
-                                            <span className="text-black"><Check size={32} color='green'/></span>
+                                            <span className="text-black"><Check size={24} color='green'/></span>
                                             <span className="text-sm">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-                            <button className="bg-blue-600 text-white px-4 py-2 rounded-md w-full font-medium hover:bg-gray-800 transition"
+                            <Link to="/buyerform" className="bg-blue-600 text-center hover:bg-blue-900 text-white px-4 py-2 rounded-md w-full font-medium hover:bg-gray-800 transition"
                                 
                                >
                                 {pkg.buttonText}
-                            </button>
+                            </Link>
                         </div>
                     ))}
                 </div>
