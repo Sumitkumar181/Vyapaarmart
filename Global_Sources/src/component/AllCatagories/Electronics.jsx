@@ -81,7 +81,7 @@ const products = [
 export default function Electronics() {
     const navigate = useNavigate(); 
                 const handleCardClick = () => {
-                    navigate("/buyerform"); 
+                    navigate("/catagory-showcase"); 
         };
     return (
         <div className="px-6 md:px-16 lg:px-10 py-10 font-roboto">

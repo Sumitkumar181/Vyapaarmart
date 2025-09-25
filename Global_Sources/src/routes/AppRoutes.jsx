@@ -12,6 +12,7 @@ import SignInpage from "../pages/SignInpage";
 import OurPackagesPage from "../pages/OurPackagesPage";
 import DashboardHome from "../features/dashboard/pages/DashboardHome";
 import DashboardLayout from "../layout/DashboardLayout";
+import CatagoryShowcase from "../component/AllCatagories/catagoriesShowcase/CatagoryShowcase";
 
 
 
@@ -59,6 +60,10 @@ const AppRoutes = [
       {
         path: "ourpackages",
         element: <OurPackagesPage/>
+      },
+      {
+        path: "catagory-showcase",
+        element: <CatagoryShowcase/>
       },
     ],
   },
